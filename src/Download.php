@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Namespace Security
+ * Namespace
  * @copyright copyright (c) 2014 Paradoxis
  */
 namespace \Paradoxis\Security;
