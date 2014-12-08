@@ -38,7 +38,7 @@ class Download {
 	 * Set path by the programmer
 	 * @var string
 	 */
-	private $path;
+	private $path = '';
 
 	/**
 	 * Allowed extensions
@@ -77,8 +77,6 @@ class Download {
 			} else {
 				$this->path = $path;
 			}
-		} else {
-			$this->path = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 		}
 
 		// Set extension whitelist
