@@ -23,8 +23,8 @@ namespace Paradoxis\Security;
  * @uses    Factory design pattern
  * @see     https://www.owasp.org/index.php/Full_Path_Disclosure
  * @see     https://www.owasp.org/index.php/Relative_Path_Traversal
- * @see  	https://www.owasp.org/index.php/Information_Leakage
- * @see 	https://www.owasp.org/index.php/CRLF_Injection
+ * @see     https://www.owasp.org/index.php/Information_Leakage
+ * @see     https://www.owasp.org/index.php/CRLF_Injection
  */
 class Download {
 

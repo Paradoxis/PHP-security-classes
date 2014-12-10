@@ -17,6 +17,11 @@ This repository is currently under construction, and doesn't cover everything, b
 * XSS
 * Downloads
 
+## Planned classes ##
+
+* XSRF
+* Uploads
+
 If you think I should add a file regarding a certain topic about security, let me know or add some code of your own. (Please refer to https://github.com/php-fig/fig-standards for code-style guides)
 
 Check out the wiki for more info on how to use this.
