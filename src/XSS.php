@@ -4,13 +4,13 @@
  * Namespace
  * @copyright copyright (c) 2014 Paradoxis
  */
-namespace \Paradoxis\Security;
+namespace Paradoxis\Security;
 
 /**
  * XSS protection class
  *
- * XSS is a method in which an attacker is able to run arbitary JavaScript 
- * on a vicitim's browser with which they are able to steal sessions or
+ * XSS is a method in which an attacker is able to run arbitrary JavaScript
+ * on a victim's browser with which they are able to steal sessions or
  * make crafted requests to a page, and in the worst case run a browser exploit.
  *
  * This class fixes this vulnerability by sanitizing input given to it
@@ -99,20 +99,20 @@ class XSS {
 	}
 
 
-	/**
-	 * Get sanitized object value by key
-	 * @param  object $array       
-	 * @param  string $key       
-	 * @param  string $default   
-	 * @return string             
-	 */
-	public static function getObjectValue(object $object, $key, $default = '') {
-		return (isset($object->$key)) ? self::escape($object->$key) : self::object($default);
+    /**
+     * Get sanitized object value by key
+     * @param  object $object
+     * @param  string $key
+     * @param  string $default
+     * @return string
+     */
+	public static function getObjectValue($object, $key, $default = '') {
+		return (isset($object->$key)) ? self::escape($object->$key) : self::escape($default);
 	}
 
 
 	/**
-	 * Sanitze a string
+	 * Sanitize a string
 	 * @param  string $string
 	 * @return string
 	 */
