@@ -59,7 +59,7 @@ class XSRF {
 	 * XSRF post token
 	 * @var string
 	 */
-	private $POST_TOKEN_NAME	= 'XSRF_TOKEN';
+	private $POST_TOKEN_NAME    = 'XSRF_TOKEN';
 
 
     /**
