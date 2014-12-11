@@ -15,11 +15,11 @@ As I learn about certain vulnerabilities in applications, I try to write classes
 This repository is currently under construction, and doesn't cover everything, but here is a list of things that have been implemented so far:
 
 * XSS
+* XSRF
 * Downloads
 
 ## Planned classes ##
 
-* XSRF
 * Uploads
 
 If you think I should add a file regarding a certain topic about security, let me know or add some code of your own. (Please refer to https://github.com/php-fig/fig-standards for code-style guides)
