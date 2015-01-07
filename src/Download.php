@@ -59,13 +59,13 @@ class Download {
 	private $errors = array();
 
 
-    /**
-     * Constructor function
-     * @param string $file (User provided filename)
-     * @param string $path (Developer provided path, DO NOT PUT USER DATA IN HERE, IT WILL NOT GET SANITIZED!!)
-     * @param array $extensions
-     * @param array $whitelist
-     */
+       	/**
+     	 * Constructor function
+     	 * @param string $file (User provided filename)
+     	 * @param string $path (Developer provided path, DO NOT PUT USER DATA IN HERE, IT WILL NOT GET SANITIZED!!)
+     	 * @param array $extensions
+     	 * @param array $whitelist
+     	 */
 	public function __construct($file, $path = null, array $extensions = null, array $whitelist = null) {
 
 		// Set filename
