@@ -178,8 +178,8 @@ class Download {
 	 * @return string
 	 */
 	private function sanitize($string) {
-		return str_replace(array(
- 				
+		return str_replace(
+			array(
 				// Hexadecimal path traversal characters (../ | ..\)
 				"\x2E\x2E\x2F",
 				"\x2E\x2E\x5C",
