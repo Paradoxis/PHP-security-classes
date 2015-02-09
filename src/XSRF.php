@@ -47,28 +47,28 @@ class XSRF {
 	 * XSRF array for all tokens
 	 * @var string
 	 */
-	private $SESSION_ARRAY_NAME = 'XSRF_TOKENS';
+	protected $SESSION_ARRAY_NAME = 'XSRF_TOKENS';
 
 	/**
 	 * XSRF session token
 	 * @var string
 	 */
-	private $SESSION_TOKEN_NAME = 'XSRF_TOKEN';
+	protected $SESSION_TOKEN_NAME = 'XSRF_TOKEN';
 
 	/**
 	 * XSRF post token
 	 * @var string
 	 */
-	private $POST_TOKEN_NAME    = 'XSRF_TOKEN';
+	protected $POST_TOKEN_NAME    = 'XSRF_TOKEN';
 
 
-    /**
-     * Constructor function
-     * @param string $session_key
-     * @param string $post_key
-     * @param string $session_array
-     * @return XSRF
-     */
+	/**
+	 * Constructor function
+	 * @param string $session_key
+	 * @param string $post_key
+	 * @param string $session_array
+	 * @return XSRF
+	 */
 	public function __construct($session_key = null, $post_key = null, $session_array = null) {
 		if ($session_key) {
 			$this->SESSION_TOKEN_NAME = $session_key;
@@ -151,7 +151,7 @@ class XSRF {
 	 * Create a pseudo random sha1 token
 	 * @return string 
 	 */
-	private function createToken() {
+	protected function createToken() {
 		$chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ:;.,<>?/~!@#$%^&*()_+';
 		$token = '';
 
