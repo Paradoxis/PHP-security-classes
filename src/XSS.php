@@ -99,13 +99,13 @@ class XSS {
 	}
 
 
-    /**
-     * Get sanitized object value by key
-     * @param  object $object
-     * @param  string $key
-     * @param  string $default
-     * @return string
-     */
+	/**
+	 * Get sanitized object value by key
+	 * @param  object $object
+	 * @param  string $key
+	 * @param  string $default
+	 * @return string
+	 */
 	public static function getObjectValue($object, $key, $default = '') {
 		return (isset($object->$key)) ? self::escape($object->$key) : self::escape($default);
 	}
