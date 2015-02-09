@@ -32,31 +32,31 @@ class Download {
 	 * File set by the user (possibly malicious)
 	 * @var string
 	 */
-	private $file;
+	protected $file;
 
 	/**
 	 * Set path by the programmer
 	 * @var string
 	 */
-	private $path = '';
+	protected $path = '';
 
 	/**
 	 * Allowed extensions
 	 * @var array (numeric)
 	 */
-	private $extensions = array('pdf', 'jpg', 'jpeg', 'png', 'gif', 'zip');
+	protected $extensions = array('pdf', 'jpg', 'jpeg', 'png', 'gif', 'zip');
 
 	/**
 	 * Whitelisted files
 	 * @var array
 	 */
-	private $whitelist = array();
+	protected $whitelist = array();
 
 	/**
 	 * All errors thrown by the script
 	 * @var array
 	 */
-	private $errors = array();
+	protected $errors = array();
 
 
        	/**
@@ -127,7 +127,7 @@ class Download {
 	 * @param  string $file
 	 * @return boolean 
 	 */
-	private function extensionAllowed($file) {
+	protected function extensionAllowed($file) {
 		return in_array(strtolower(end(explode('.', $file))), array_map('strtolower', $this->extensions));
 	}
 
@@ -137,7 +137,7 @@ class Download {
 	 * @param  string $file
 	 * @return boolean
 	 */
-	private function fileInWhiteList($file) {
+	protected function fileInWhiteList($file) {
 		return in_array($file, $this->whitelist);
 	}
 
@@ -147,7 +147,7 @@ class Download {
 	 * @param  string $file 
 	 * @return boolean
 	 */
-	private function fileExists($file) {
+	protected function fileExists($file) {
 		return (file_exists($file) && is_readable($file));
 	}
 
@@ -159,7 +159,7 @@ class Download {
 	 * @param  boolean $fullPath
 	 * @return string
 	 */
-	private function getFileName($fullPath = false) {
+	protected function getFileName($fullPath = false) {
 		if ($fullPath) {
 			return $this->path . $this->sanitize( $this->file );
 		} else {
@@ -177,7 +177,7 @@ class Download {
 	 * @param  string $string
 	 * @return string
 	 */
-	private function sanitize($string) {
+	protected function sanitize($string) {
 		return str_replace(
 			array(
 				// Hexadecimal path traversal characters (../ | ..\)
