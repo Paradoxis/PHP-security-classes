@@ -2,7 +2,7 @@
 
 /**
  * Namespace
- * @copyright copyright (c) 2014 Paradoxis
+ * @copyright copyright (c) 2014 - 2015 Paradoxis
  */
 namespace Paradoxis\Security;
 
